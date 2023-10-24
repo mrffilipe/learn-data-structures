@@ -1,5 +1,7 @@
-import type { Metadata } from 'next'
 import './globals.css'
+import './fonts.css'
+
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Aprender estruturas de dados',

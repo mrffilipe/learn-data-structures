@@ -4,4 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #ACB3C2;
+  --alternative-color: #65718F;
+  --accent-color: #2F3C5C;
+}
+
 @media screen and (min-width: 960px) {}

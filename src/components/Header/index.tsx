@@ -11,16 +11,16 @@ const Header = () => {
             <nav className={styles.navigation}>
                 <ul>
                     <li>
-                        <Link href='/'>Listas lineares</Link>
+                        <Link href='/learn/linear-lists'>Listas lineares</Link>
                     </li>
                     <li>
-                        <Link href='/'>Árvores</Link>
+                        <Link href='/learn/trees'>Árvores</Link>
                     </li>
                     <li>
-                        <Link href='/'>Tabelas hash</Link>
+                        <Link href='/learn/hash-tables'>Tabelas hash</Link>
                     </li>
                     <li>
-                        <Link href='/'>Grafos</Link>
+                        <Link href='/learn/graphs'>Grafos</Link>
                     </li>
                 </ul>
             </nav>

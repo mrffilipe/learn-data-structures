@@ -5,9 +5,14 @@
 }
 
 :root {
-  --primary-color: #ACB3C2;
-  --alternative-color: #65718F;
-  --accent-color: #2F3C5C;
+  --primary-color: #262626;
+  --alternative-color: #313131;
+  --accent-color: #038C3E;
+  --text-highlight-color: #d8d8d8;
+}
+
+main {
+  background-color: var(--primary-color);
 }
 
 @media screen and (min-width: 960px) {}

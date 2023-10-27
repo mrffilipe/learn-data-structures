@@ -1,3 +1,5 @@
+import styles from './page.module.css'
+
 import Sidebar from '@/components/Sidebar'
 
 const Layout = ({
@@ -6,10 +8,10 @@ const Layout = ({
     children: React.ReactNode
 }) => {
     return (
-        <div>
+        <section className={styles.content}>
             <Sidebar />
             {children}
-        </div>
+        </section>
     )
 }
 

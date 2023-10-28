@@ -2,75 +2,25 @@
 
 import styles from './styles.module.css'
 
-import { useState } from 'react'
-import Link from 'next/link'
-
-import { KeyboardArrowRightOutlined } from '@mui/icons-material'
+import GroupMenuItems from './GroupMenuItems'
+import MenuItem from './MenuItem'
 
 const Sidebar = () => {
-    const [expandMenu, setExpandMenu] = useState<boolean>(true);
-
     return (
         <nav className={styles.navigation}>
             <ul>
-                <li>
-                    <Link href='/'>
-                        Introdução
-                    </Link>
-                </li>
-                <li>
-                    <Link href='/'>
-                        Alocação sequencial
-                    </Link>
-                </li>
-                <li>
-                    <Link href='/'>
-                        Listas lineares em alocação sequencial
-                    </Link>
-                </li>
-                <li>
-                    <Link href='/'>
-                        Pilhas e filas
-                    </Link>
-                </li>
-                <li>
-                    <Link href='/'>
-                        Alocação encadeada
-                    </Link>
-                </li>
-                <li>
-                    <ul className={`${styles.expandable_menu} ${expandMenu ? styles.expand_menu : ''}`}>
-                        <Link href='/'>
-                            Listas lineares em alocação encadeada
-                            <KeyboardArrowRightOutlined />
-                        </Link>
-                        <li>
-                            <Link href='/'>
-                                Listas simplesmente encadeadas
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='/'>
-                                Pilhas e filas
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='/'>
-                                Listas circulares
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='/'>
-                                Listas duplamente encadeadas
-                            </Link>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <Link href='/'>
-                        Alocação de espaço variável
-                    </Link>
-                </li>
+                <MenuItem value='Introdução' href='/' selected />
+                <MenuItem value='Alocação sequencial' href='/' />
+                <MenuItem value='Listas lineares em alocação sequencial' href='/' />
+                <MenuItem value='Pilhas e filas' href='/' />
+                <MenuItem value='Alocação encadeada' href='/' />
+                <GroupMenuItems value='Listas lineares em alocação encadeada'>
+                    <MenuItem value='Listas simplesmente encadeadas' href='/' selected />
+                    <MenuItem value='Pilhas e filas' href='/' />
+                    <MenuItem value='Listas circulares' href='/' />
+                    <MenuItem value='Listas duplamente encadeadas' href='/' />
+                </GroupMenuItems>
+                <MenuItem value='Alocação de espaço variável' href='/' />
             </ul>
         </nav>
     )

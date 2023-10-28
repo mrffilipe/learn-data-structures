@@ -1,5 +1,4 @@
 .navigation {
-    min-width: 240px;
     max-width: 300px;
     height: 100vh;
     background-color: #3b3b3b;
@@ -11,55 +10,4 @@
 
 .navigation ul {
     list-style: none;
-}
-
-.navigation ul>a svg {
-    font-size: 2em;
-}
-
-.navigation li {
-    border-bottom: 1px solid var(--primary-color);
-}
-
-.navigation a {
-    text-decoration: none;
-    color: #fff;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all .3s ease;
-}
-
-.navigation a:hover {
-    border-left: 3px solid #fff;
-}
-
-.expandable_menu {
-    background-color: #555;
-}
-
-.expandable_menu>a {
-    border-bottom: 1px solid var(--primary-color);
-}
-
-.expandable_menu>a svg {
-    color: var(--accent-color);
-    transition: all .3s ease;
-}
-
-.expandable_menu li {
-    display: none;
-}
-
-.expandable_menu li a {
-    margin-left: 1em;
-}
-
-.expand_menu>a svg {
-    transform: rotate(90deg);
-}
-
-.expand_menu li {
-    display: block;
 }

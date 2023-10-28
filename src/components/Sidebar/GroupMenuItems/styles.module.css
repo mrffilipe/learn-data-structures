@@ -1,0 +1,38 @@
+.menu li {
+    padding-left: 1em;
+}
+
+.menu button {
+    background: none;
+    border: none;
+    text-align: start;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.menu button svg {
+    font-size: 2em;
+    color: var(--accent-color);
+    transition: all .3s ease;
+}
+
+.menu li {
+    display: none;
+}
+
+.expand_menu {
+    background-color: #555;
+}
+
+.expand_menu li {
+    display: block;
+}
+
+.expand_menu button svg {
+    rotate: 90deg;
+}

@@ -4,7 +4,8 @@ h1,
 h2,
 h3,
 p,
-a {
+a,
+button {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -27,7 +28,8 @@ p {
     font-size: 1em;
 }
 
-a {
+a,
+button {
     font-size: 1em;
 }
 

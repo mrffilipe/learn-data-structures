@@ -1,0 +1,21 @@
+.item {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item a:hover {
+    border-left: 3px solid #fff;
+}
+
+.selected a {
+    color: var(--accent-color);
+    border-left: 3px solid var(--accent-color);
+}

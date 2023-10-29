@@ -10,7 +10,9 @@ const Layout = ({
     return (
         <section className={styles.content}>
             <Sidebar />
-            {children}
+            <div>
+                {children}
+            </div>
         </section>
     )
 }

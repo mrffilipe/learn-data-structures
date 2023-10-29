@@ -1,3 +1,9 @@
 .content {
     display: flex;
 }
+
+.content>div {
+    /* background-color: #fff; */
+    flex: 1;
+    padding: 80px 120px;
+}

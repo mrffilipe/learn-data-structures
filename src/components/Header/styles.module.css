@@ -31,11 +31,12 @@
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 600;
     transition: all .3s ease;
 }
 
 .navigation a:hover {
     color: var(--text-highlight-color);
-    border-bottom: 1px solid var(--text-highlight-color);
+    color: transparent;
+    text-shadow: 0 0 5px #fff; /* adicionar elemento por cima */
 }

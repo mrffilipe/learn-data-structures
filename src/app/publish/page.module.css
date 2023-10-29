@@ -1,0 +1,41 @@
+.container {
+    padding: 60px 80px;
+}
+
+.container h1 {
+    color: #fff;
+}
+
+.tabs {
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tabs>div {
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.tabs>div:hover {
+    background-color: #000;
+}
+
+.tabs>div:nth-child(1) {
+    margin-right: .5em;
+}
+
+.tabs .active_tab,
+.tabs .active_tab:hover {
+    background-color: var(--alternative-color);
+}
+
+.tab_content {
+    border-radius: 8px 0 8px 8px;
+    background-color: var(--alternative-color);
+    overflow: hidden;
+}
